@@ -3,10 +3,7 @@
 //Input: a = 5 b = 10
 //Output: a = 10 b = 5
 
-//var a = int.Parse(ReadLine());
-//var b = int.Parse(ReadLine());
+var a = int.Parse(ReadLine());
+var b = int.Parse(ReadLine());
 
-Write($"a = ", ReadLine()); Write($"b = ", ReadLine());
-
-
-//Write($"a = {b} b = {a}");
+Write($"a = {b} b = {a}");

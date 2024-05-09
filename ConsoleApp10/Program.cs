@@ -5,16 +5,37 @@
 //Input: 342
 //Output: not armstrong
 
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.CompilerServices;
+//var num = ReadLine();
 
-var number = ReadLine();
+//double power = num.Length;
+//var num1 = int.Parse(num);
+//int[] num2 = new int [num.Length] {num1};
 
-var Strongarm = number.Length;
+//for (int i = 0; i <= power; i++)
+//{
+//    double number = num2[i];
 
-for (int i = 0; i < Strongarm; i++)
+//    var res = (long)Math.Pow(number, power);
+//    WriteLine(res);
+//}
+
+Write("Enter the number to see if it is an armstrong number");
+
+var n = int.Parse(ReadLine());
+
+int r;
+int sum = 0;
+int temp;
+temp = n;
+
+while (n > 0)
 {
-    var res = Math.Pow(number[i], Strongarm) ;
-     
-    WriteLine(res);
+    r = n % 10;
+    sum = sum + (r * r * r);
+    n = n / 10;
 }
+if (temp == sum)
+    Write("Armstrong Number.");
+else
+    Write("Not Armstrong Number.");      
+        

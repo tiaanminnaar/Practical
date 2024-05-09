@@ -3,5 +3,4 @@
 //Input: 10
 //Output: 1010
 
-var n = int.Parse(ReadLine());
-
+var num = double.Parse(ReadLine());

@@ -11,3 +11,22 @@
 //1   1   2   3   5   8   13
 //1   1   2   3   5   8   13  21
 //1   1   2   3   5   8   13  21  34
+
+var a = int.Parse(ReadLine());
+
+int current = 1;
+int prevous = 0;
+int next;
+string prevousstr = null;
+
+for (int i = 0; i < a; i++)
+{
+    next = prevous + current;
+
+    WriteLine($"{prevousstr}{current}");
+
+    prevousstr = $"{prevousstr}{current} ";
+
+    prevous = current;
+    current = next;
+}
