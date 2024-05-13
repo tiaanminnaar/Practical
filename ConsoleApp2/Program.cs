@@ -7,38 +7,48 @@
 //  ABCDCBA
 // ABCDEDCBA
 
-int current;
-int prevous = 0;
-int Reverseprevous = 0;
 string prevousstr = null;
 string ReversePrevousstr = null;
 
-int ReverseInt(int num)
+string Reverse(string text)
 {
-    int result = 0;
-    while (num > 0)
+    char[] cArray = text.ToCharArray();
+    string reverse = String.Empty;
+    for (int i = cArray.Length - 1; i > -1; i--)
     {
-        result = result * 10 + num % 10;
-        num /= 10;
+        reverse += cArray[i];
     }
-    return result;
+    return reverse;
 }
 
-for (int i = 1; i <= 26; i++)
+for (int i = 65; i <= 90; i++)
 {
-    current = i;
+    string strAlpha = "";
 
-    for (int j = i; j <= 26; j++)
+    for (int j = i; j <= 90; j++)
     {
         Write($" ");
     }
+    strAlpha += ((char)i).ToString();
+    WriteLine($"{prevousstr}{strAlpha}{ReversePrevousstr}");
 
-    WriteLine($"{prevousstr}{current}{ReversePrevousstr}");
+    prevousstr = $"{prevousstr}{strAlpha}";
 
-    prevousstr = $"{prevousstr}{current}";
-
-    prevous = current;
-    Reverseprevous = ReverseInt(int.Parse(prevousstr));
-
-    ReversePrevousstr = $"{Reverseprevous}";
+    ReversePrevousstr = Reverse(prevousstr);
 }
+
+//public void GetAlphabets()
+//{
+//    //Declare string for alphabet
+//    string strAlpha = "";
+
+//    //Loop through the ASCII characters 65 to 90
+//    for (int i = ; i <= ; i++)
+//    {
+//        // Convert the int to a char to get the actual character behind the ASCII code
+//        strAlpha += ((char)i).ToString() + " ";
+//    }
+
+//    //Displaying alphabets
+//    Response.Write(strAlpha);
+//}

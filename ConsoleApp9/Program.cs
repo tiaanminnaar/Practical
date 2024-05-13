@@ -3,4 +3,6 @@
 //Input: 10
 //Output: 1010
 
+https://learn.microsoft.com/en-us/dotnet/api/system.bitconverter.doubletoint64bits?view=net-8.0
+
 var num = double.Parse(ReadLine());

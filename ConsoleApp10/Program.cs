@@ -19,22 +19,28 @@
 //    WriteLine(res);
 //}
 
-Write("Enter the number to see if it is an armstrong number");
+Write("Enter the number to see if it is an armstrong number ");
 
-var n = int.Parse(ReadLine());
+var num = ReadLine();
 
-int r;
+int last;
 int sum = 0;
-int temp;
-temp = n;
+int length = num.Length;
+int num1 = int.Parse(num);
+int num2 = int.Parse(num);
+int r;
+double b;
 
-while (n > 0)
+
+while (num1 > 0)
 {
-    r = n % 10;
-    sum = sum + (r * r * r);
-    n = n / 10;
+    last = num1 % 10;
+    b = Math.Pow(last, length);
+    r = (int) b;
+    sum = sum + r;
+    num1 = num1 / 10;
 }
-if (temp == sum)
+if (num2 == sum)
     Write("Armstrong Number.");
 else
     Write("Not Armstrong Number.");      

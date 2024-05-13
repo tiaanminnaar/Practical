@@ -5,17 +5,73 @@
 
 var num = int.Parse(ReadLine());
 
-Dictionary<int, string> lookupIntString = new();
+int ReverseInt(int num)
+{
+    int result = 0;
+    while (num > 0)
+    {
+        result = result * 10 + num % 10;
+        num /= 10;
+    }
+    return result;
+}
 
-lookupIntString.Add(1, "one");
-lookupIntString.Add(2, "two");
-lookupIntString.Add(3, "three");
-lookupIntString.Add(4, "four");
-lookupIntString.Add(5, "five");
-lookupIntString.Add(6, "six");
-lookupIntString.Add(7, "seven");
-lookupIntString.Add(8, "eight");
-lookupIntString.Add(9, "nine");
-lookupIntString.Add(0, "zero");
+int num1 = ReverseInt(num);
+int sum = 0;
+int last;
+string prevous = null;
+string laststr  = null;
+string value = null;
 
-//int[] num1 = new int [num.Length] {num};
+while (num1 > 0)
+{
+    prevous = value;
+    last = num1 % 10;
+    num1 = num1 / 10;
+    switch (last)
+    {
+        case 1:
+            laststr = $"{last}";
+            laststr = $"one ";
+            break;
+        case 2:
+            laststr = $"{last}";
+            laststr = $"two ";
+            break;
+        case 3:
+            laststr = $"{last}";
+            laststr = $"three ";
+            break;
+        case 4:
+            laststr = $"{last}";
+            laststr = $"four ";
+            break;
+        case 5:
+            laststr = $"{last}";
+            laststr = $"five ";
+            break;
+        case 6:
+            laststr = $"{last}";
+            laststr = $"six ";
+            break;
+        case 7:
+            laststr = $"{last}";
+            laststr = $"seven ";
+            break;
+        case 8:
+            laststr = $"{last}";
+            laststr = $"eight ";
+            break;
+        case 9:
+            laststr = $"{last}";
+            laststr = $"nine ";
+            break;
+        case 0:
+            laststr = $"{last}";
+            laststr = $"zero ";
+            break;
+
+    }
+    value = $"{prevous}{laststr}";
+}
+WriteLine($"{value}");
