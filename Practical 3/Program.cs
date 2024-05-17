@@ -5,22 +5,31 @@
 //Input: 113
 //Output: not palindrome number
 
-var num = int.Parse(ReadLine());
+WriteLine("Enter the number witch you would like to see if it is a palindrome number.");
+var n = int.Parse(ReadLine());
+CheckPalindromeNumber(n);
 
-int ReverseInt(int num)
+var m = int.Parse(ReadLine());
+CheckPalindromeNumber(m);
+
+
+void CheckPalindromeNumber(int n)
 {
-    int result = 0;
-    while (num > 0)
+    int ReverseInt(int num)
     {
-        result = result * 10 + num % 10;
-        num /= 10;
+        int result = 0;
+        while (num > 0)
+        {
+            result = result * 10 + num % 10;
+            num /= 10;
+        }
+        return result;
     }
-    return result;
+
+    int n1 = ReverseInt(n);
+
+    if (n == n1)
+        WriteLine("palimdrome number");
+    else
+        WriteLine("not palimdrome number");
 }
-
-int num1 = ReverseInt(num);
-
-if (num == num1)
-    WriteLine("palimdrome number");
-else
-    WriteLine("not palimdrome number");

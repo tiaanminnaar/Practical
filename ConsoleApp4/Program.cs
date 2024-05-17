@@ -12,6 +12,7 @@
 //1   1   2   3   5   8   13  21
 //1   1   2   3   5   8   13  21  34
 
+WriteLine($"Enter the the range of the fibonacci series triangle you would like to see");
 var a = int.Parse(ReadLine());
 
 int current = 1;

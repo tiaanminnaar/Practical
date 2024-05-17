@@ -3,6 +3,7 @@
 //Input: 234
 //Output: 432
 
+WriteLine("Enter the number to see its revesed number");
 var num = int.Parse(ReadLine());
 int ReverseInt(int num)
 {

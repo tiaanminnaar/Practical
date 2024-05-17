@@ -21,11 +21,11 @@ string Reverse(string text)
     return reverse;
 }
 
-for (int i = 65; i <= 90; i++)
+for (int i = 65; i <= (90 - 21); i++)
 {
     string strAlpha = "";
 
-    for (int j = i; j <= 90; j++)
+    for (int j = i; j <= (90 - 21); j++)
     {
         Write($" ");
     }

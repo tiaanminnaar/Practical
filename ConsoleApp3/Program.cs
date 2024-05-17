@@ -10,11 +10,11 @@
 //  123454321
 // 12345654321
 
+WriteLine($"Enter the range of te triangle you would like to see");
 var Range = int.Parse(ReadLine());
 
+WriteLine($"enter the range = {Range + 1}");
 int current;
-int prevous = 0;
-int Reverseprevous = 0;
 string prevousstr = null;
 string ReversePrevousstr = null;
 
@@ -42,8 +42,7 @@ for (int i = 1; i <= Range + 1; i++)
 
     prevousstr = $"{prevousstr}{current}";
 
-    prevous = current;
-    Reverseprevous = ReverseInt(int.Parse(prevousstr));
+    int Reverseprevous = ReverseInt(int.Parse(prevousstr));
 
     ReversePrevousstr = $"{Reverseprevous}";
 }

@@ -5,15 +5,22 @@
 //Input: 624
 //Output: 12
 
-var num = int.Parse(ReadLine());
+WriteLine("Enter the number to see the sum of its digits");
+var n = int.Parse(ReadLine());
+SumOfDigits(n);
 
-int sum = 0;
-int r;
-
-while (num > 0)
+var m = int.Parse(ReadLine());
+SumOfDigits(m);
+void SumOfDigits(int num)
 {
-    r = num % 10;
-    sum = sum + r;
-    num = num / 10;
+    int sum = 0;
+    int r;
+
+    while (num > 0)
+    {
+        r = num % 10;
+        sum = sum + r;
+        num = num / 10;
+    }
+    WriteLine(sum);
 }
-WriteLine(sum);

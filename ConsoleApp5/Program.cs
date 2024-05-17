@@ -3,6 +3,7 @@
 //Input: 357546
 //Output: three five seven five four six
 
+WriteLine($"Enter the a number of wicth you would like to see changed in to characters");
 var num = int.Parse(ReadLine());
 
 int ReverseInt(int num)

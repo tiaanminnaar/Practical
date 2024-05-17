@@ -5,22 +5,31 @@
 //Input: 57
 //Output: not prime number
 
-var n = int.Parse(ReadLine());
-var prime = true;
+WriteLine("Enter the number you would like to see is a prime number.");
+var num = int.Parse(ReadLine());
+CheckPrimeNumber(num);
 
-for(int i = 2; i < n; i++)
+var n = int.Parse(ReadLine());
+CheckPrimeNumber(n);
+
+void CheckPrimeNumber(int n) 
 {
-    if(n % i == 0)
+    var prime = true;
+
+    for (int i = 2; i < n; i++)
     {
-        prime = false;
-        break;
-    } 
-}
-if (prime)
-{
-    WriteLine("Prime");
-}
-else
-{
-    WriteLine("Not prime");
+        if (n % i == 0)
+        {
+            prime = false;
+            break;
+        }
+    }
+    if (prime)
+    {
+        WriteLine("Prime number");
+    }
+    else
+    {
+        WriteLine("Not prime number");
+    }
 }
