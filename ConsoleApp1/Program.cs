@@ -14,3 +14,4 @@ for (int i = 1; i <= Frac; i++)
 }
 
 WriteLine($"{Fracres}");
+

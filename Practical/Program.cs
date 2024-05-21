@@ -13,7 +13,7 @@ int next;
 for (int i = 0; i < a; i++)
 {
     next = prevous + current;
-
+    
     Write($"{current} ");
 
     prevous = current;

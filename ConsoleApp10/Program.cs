@@ -37,7 +37,6 @@ void CheckArmstrongNumber(int num)
     int r;
     double b;
 
-
     while (num1 > 0)
     {
         last = num1 % 10;

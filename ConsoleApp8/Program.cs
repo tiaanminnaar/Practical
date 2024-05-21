@@ -4,6 +4,9 @@
 //Output: a = 10 b = 5
 
 WriteLine($"Enter the numbers you would like too switch");
-Write($"a = "); var a = ReadKey(); Write($"b = "); var b = ReadLine();
+Write($"a = "); 
+var a = ReadKey(); 
+Write($"b = "); 
+var b = ReadLine();
 
 Write($"a = {b} b = {a}");

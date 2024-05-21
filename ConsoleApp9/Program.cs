@@ -8,16 +8,7 @@ using System.Text;
 
 https://learn.microsoft.com/en-us/dotnet/api/system.bitconverter.doubletoint64bits?view=net-8.0
 
-var n = double.Parse(ReadLine());
-
-//string DoubleToBinaryString(double val)
-//{
-//    long v = BitConverter.DoubleToInt64Bits(val);
-//    string binary = Convert.ToString(v, 2);
-//    return binary;
-//}
-//var bite = DoubleToBinaryString(num);
-//WriteLine(bite);
+var n =int.Parse(ReadLine());
 
 int ReverseInt(int num)
 {
@@ -29,8 +20,7 @@ int ReverseInt(int num)
     }
     return result;
 }
-int num = (int)n;
-string b = ($"{num:B64}");
+string b = ($"{n:B64}");
 int num1 = int.Parse(b);
 var numrev = ReverseInt(num1);
 var binary = ReverseInt(numrev);

@@ -10,8 +10,14 @@ var n = int.Parse(ReadLine());
 SumOfDigits(n);
 
 var m = int.Parse(ReadLine());
-SumOfDigits(m);
-void SumOfDigits(int num)
+int t = SumOfDigits(m);
+WriteLine(t);
+
+if (t > 100)
+{
+    WriteLine("t greater than 100");
+}
+int SumOfDigits(int num)
 {
     int sum = 0;
     int r;
@@ -22,5 +28,5 @@ void SumOfDigits(int num)
         sum = sum + r;
         num = num / 10;
     }
-    WriteLine(sum);
+    return sum;
 }

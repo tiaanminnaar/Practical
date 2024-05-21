@@ -3,31 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 1", "Practical\Practical 1.csproj", "{F42D8115-62C2-44EE-B6D2-8AE577E2F87D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 1", "Practical\Practical 1.csproj", "{F42D8115-62C2-44EE-B6D2-8AE577E2F87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 2", "Practical 2\Practical 2.csproj", "{BD73A112-351B-4223-829E-DAFC67D78691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 2", "Practical 2\Practical 2.csproj", "{BD73A112-351B-4223-829E-DAFC67D78691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 3", "Practical 3\Practical 3.csproj", "{647B2A44-AC6E-42DC-9B3F-7226ABDAE312}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 3", "Practical 3\Practical 3.csproj", "{647B2A44-AC6E-42DC-9B3F-7226ABDAE312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 4", "ConsoleApp1\Practical 4.csproj", "{1BDCBAA0-7517-4951-B44C-C88EC6E6A386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 4", "ConsoleApp1\Practical 4.csproj", "{1BDCBAA0-7517-4951-B44C-C88EC6E6A386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 10", "ConsoleApp2\Practical 10.csproj", "{C2FB3D80-CE4C-4821-8AB0-287071209597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 10", "ConsoleApp2\Practical 10.csproj", "{C2FB3D80-CE4C-4821-8AB0-287071209597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 11", "ConsoleApp3\Practical 11.csproj", "{FF3A6E8E-ED41-4E98-8E8C-0C3AB5B38245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 11", "ConsoleApp3\Practical 11.csproj", "{FF3A6E8E-ED41-4E98-8E8C-0C3AB5B38245}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 12", "ConsoleApp4\Practical 12.csproj", "{F852E397-BF96-48DF-A20D-2451ADD9B969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 12", "ConsoleApp4\Practical 12.csproj", "{F852E397-BF96-48DF-A20D-2451ADD9B969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 13", "ConsoleApp5\Practical 13.csproj", "{12E38554-9B09-4D9C-841B-4C9829503E4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 13", "ConsoleApp5\Practical 13.csproj", "{12E38554-9B09-4D9C-841B-4C9829503E4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 6", "ConsoleApp6\Practical 6.csproj", "{B0EA1CEE-B300-4160-9784-9DC9660CCF3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 6", "ConsoleApp6\Practical 6.csproj", "{B0EA1CEE-B300-4160-9784-9DC9660CCF3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 7", "ConsoleApp7\Practical 7.csproj", "{2173740B-C96E-4772-827F-CCF1D37B4058}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 7", "ConsoleApp7\Practical 7.csproj", "{2173740B-C96E-4772-827F-CCF1D37B4058}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 8", "ConsoleApp8\Practical 8.csproj", "{75CCE9A3-519B-48B0-9FBB-476478D4585C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 8", "ConsoleApp8\Practical 8.csproj", "{75CCE9A3-519B-48B0-9FBB-476478D4585C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 9", "ConsoleApp9\Practical 9.csproj", "{5797A82A-324B-40F3-BF6A-6F52D5E857C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 9", "ConsoleApp9\Practical 9.csproj", "{5797A82A-324B-40F3-BF6A-6F52D5E857C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practical 5", "ConsoleApp10\Practical 5.csproj", "{1F254119-E9EA-4D82-BA49-301ECB1301AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practical 5", "ConsoleApp10\Practical 5.csproj", "{1F254119-E9EA-4D82-BA49-301ECB1301AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEulerrRun", "ProjectEulerrRun\ProjectEulerrRun.csproj", "{3B1CE230-A57B-402F-A660-7FB0C386FFD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{1F254119-E9EA-4D82-BA49-301ECB1301AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F254119-E9EA-4D82-BA49-301ECB1301AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F254119-E9EA-4D82-BA49-301ECB1301AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1CE230-A57B-402F-A660-7FB0C386FFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1CE230-A57B-402F-A660-7FB0C386FFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1CE230-A57B-402F-A660-7FB0C386FFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1CE230-A57B-402F-A660-7FB0C386FFD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
