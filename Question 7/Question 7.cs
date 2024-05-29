@@ -10,14 +10,13 @@ for (int j = 2; j < int.MaxValue; j++)
         if (j % i == 0)
         {
             prime = false;
-            break;
+            break;                                    
         }
     }
     if (prime)
     {
         primeStr = Convert.ToString(j);
     }
-
 }
 prime10001 = Convert.ToString(primeArray[10001]);
 
