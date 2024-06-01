@@ -191,6 +191,20 @@ long First10Num(string t)
     return sum;
 }
 
+long SumLast10Num(string t)
+{
+    long sum = 0;
+    long prevSum = 0;
+    int j = t.Length;
+    for (int i = (t.Length - 10); i <= (t.Length - 1); i++)
+    {
+        long r = long.Parse(t[i].ToString());
+        sum = (prevSum * 10) + r;
+        prevSum = sum;
+    }
+    return sum;
+}
+
 long nl1 = Last10Num(num1); long nm1 = Middle30To39Num(num1); long nmm1 = Middle20To29Num(num1); long nmmm1 = Middle10To19Num(num1); long nf1 = First9Num(num1);
 long nl2 = Last10Num(num2); long nm2 = Middle30To39Num(num2); long nmm2 = Middle20To29Num(num2); long nmmm2 = Middle10To19Num(num2); long nf2 = First9Num(num2);
 long nl3 = Last10Num(num3); long nm3 = Middle30To39Num(num3); long nmm3 = Middle20To29Num(num3); long nmmm3 = Middle10To19Num(num3); long nf3 = First9Num(num3);
@@ -332,15 +346,17 @@ long sumOfMiddle10To19 = nmmm1 + nmmm2 + nmmm3 + nmmm4 + nmmm5 + nmmm6 + nmmm7 +
     + nmmm93 + nmmm94 + nmmm95 + nmmm96 + nmmm97 + nmmm98 + nmmm99 + nmmm100 + finalSumOfMiddle20To29;
 string sumOfMiddle10To19str = $"{sumOfMiddle10To19}";
 long finalSumOfMiddle10To19 = DiscardLast10(sumOfMiddle10To19str);
-long sumOfFirst9 = nf1 + nf2 + nf3 + nf4 + nf5 + nf6 + nf7 + nf8 + nf9 + nf10 + nf11 + nf11 + nf12 + nf12 + nf13
+long sumOfFirst9 = ((nf1 + nf2 + nf3 + nf4 + nf5 + nf6 + nf7 + nf8 + nf9 + nf10 + nf11 + nf11 + nf12 + nf12 + nf13
     + nf14 + nf15 + nf16 + nf17 + nf18 + nf18 + nf19 + nf20 + nf21 + nf22 + nf23 + nf24 + nf25 + nf26 + nf27
     + nf28 + nf29 + nf30 + nf31 + nf32 + nf33 + nf34 + nf35 + nf36 + nf37 + nf38 + nf39 + nf40 + nf41 + nf42
     + nf43 + nf44 + nf45 + nf46 + nf47 + nf48 + nf49 + nf50 + nf51 + nf52 + nf53 + nf54 + nf55 + nf56 + nf57
     + nf58 + nf59 + nf60 + nf61 + nf62 + nf63 + nf64 + nf65 + nf66 + nf67 + nf68 + nf69 + nf70 + nf71 + nf72
     + nf73 + nf74 + nf75 + nf76 + nf77 + nf78 + nf79 + nf80 + nf81 + nf82 + nf83 + nf84 + nf85 + nf86 + nf87
-    + nf88 + nf89 + nf90 + nf91 + nf92 + nf93 + nf94 + nf95 + nf96 + nf97 + nf98 + nf99 + nf100
+    + nf88 + nf89 + nf90 + nf91 + nf92 + nf93 + nf94 + nf95 + nf96 + nf97 + nf98 + nf99 + nf100) * 10)
     + finalSumOfMiddle10To19;
 string sumOfFirst9str = $"{sumOfFirst9}";
 long finalSumOfLast9 = First10Num(sumOfFirst9str);
+long last10Num = SumLast10Num(sumOfLast10str);
 
+WriteLine(last10Num);
 WriteLine(finalSumOfLast9);
