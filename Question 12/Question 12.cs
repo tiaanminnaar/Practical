@@ -1,6 +1,6 @@
 ﻿long first500Divisitors = 0;
 long h = 0;
-for (int i = 1; i < long.MaxValue; i++)
+for (int i = 1; i < int.MaxValue; i++)
 {
     h += i;
     int chain = 0;

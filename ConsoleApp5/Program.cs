@@ -32,7 +32,6 @@ while (num1 > 0)
     switch (last)
     {
         case 1:
-            laststr = $"{last}";
             laststr = $"one ";
             break;
         case 2:
@@ -40,7 +39,6 @@ while (num1 > 0)
             laststr = $"two ";
             break;
         case 3:
-            laststr = $"{last}";
             laststr = $"three ";
             break;
         case 4:
