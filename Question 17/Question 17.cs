@@ -1,6 +1,6 @@
 ﻿string totalNumStr = string.Empty;
 string combinedNumStr = string.Empty;
-
+int sum = 0;
 for (int i = 1; i <= 1000; i++)
 {
     string prevCombinedNumStr = totalNumStr;
@@ -21,7 +21,7 @@ for (int i = 1; i <= 1000; i++)
             switch (num)
             {
                 case 0:
-                    numStr = "";
+                    numStr = string.Empty;
                     break;
                 case 1:
                     numStr = "One";
@@ -87,10 +87,11 @@ for (int i = 1; i <= 1000; i++)
             switch (num)
             {
                 case 0:
-                    numStr = "";
+                    numStr = string.Empty;
                     break;
                 case 1:
                     num1 = num * 10;
+                    numStr = string.Empty;
                     break;
                 case 2:
                     numStr = "Twenty";
@@ -124,7 +125,7 @@ for (int i = 1; i <= 1000; i++)
             switch (num)
             {
                 case 0:
-                    numStr = "";
+                    numStr = string.Empty;
                     break;
                 case 1:
                     numStr = "Onehundredand";
@@ -166,7 +167,9 @@ for (int i = 1; i <= 1000; i++)
         }
         combinedNumStr = $"{prevNumStr}{numStr}";
     }
+    sum += combinedNumStr.Length;
     totalNumStr = $"{prevCombinedNumStr}{combinedNumStr}";
+    WriteLine($"{combinedNumStr} {sum}");
 }
 
 int totalLetters = totalNumStr.Length - (3 * 9);

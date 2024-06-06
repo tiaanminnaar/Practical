@@ -1,19 +1,21 @@
-﻿ulong posabilities = GridPosabilities(20,20);
+﻿using System.Numerics;
 
-ulong GridPosabilities(ulong x, ulong y)
+BigInteger posabilities = GridPosabilities(20,20);
+
+BigInteger GridPosabilities(BigInteger x, BigInteger y)
 {
-    ulong topFactoral = Factoral((x + y));
-    ulong xBottomFactoral = Factoral(x);
-    ulong yBottomFactoral = Factoral(y);
-    ulong bottomFactoral = xBottomFactoral * yBottomFactoral;
-    ulong gridPosabilities = topFactoral / bottomFactoral;
+    BigInteger topFactoral = Factoral((x + y));
+    BigInteger xBottomFactoral = Factoral(x);
+    BigInteger yBottomFactoral = Factoral(y);
+    BigInteger bottomFactoral = xBottomFactoral * yBottomFactoral;
+    BigInteger gridPosabilities = topFactoral / bottomFactoral;
     return gridPosabilities;
 }
 
-ulong Factoral(ulong x)
+BigInteger Factoral(BigInteger x)
 {
-    ulong factoral = 1;
-    for (ulong i = x; i >= 2; i--)
+    BigInteger factoral = 1;
+    for (BigInteger i = x; i >= 2; i--)
     {
         factoral *= i;
     }
