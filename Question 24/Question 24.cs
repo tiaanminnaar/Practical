@@ -11,49 +11,50 @@ for (int a = 0; a <= 9; a++)
             prevSum = (prevSum + b) * 10;
             for (int c = 0; c <= 9; c++)
             {
-                if (c != (a & b))
+                if ((c != b) & (c != a))
                 {
                     prevSum = (prevSum + c) * 10;
                     for (int d = 0; d <= 9; d++)
                     {
-                        if (d != (a & b & c))
+                        if ((d != a) & (d != b) & (d != c))
                         {
                             prevSum = (prevSum + d) * 10;
                             for (int e = 0; e <= 9; e++)
                             {
-                                if (e != (a & b & c & d))
+                                if ((e != a) & (e != b) & (e != c) & (e != d))
                                 {
                                     prevSum = (prevSum + e) * 10;
                                     for (int f = 0; f <= 9; f++)
                                     {
-                                        if (f != (a & b & c & d & e))
+                                        if ((f != a) & (f != b) & (f != c) & (f != d) & (f != e))
                                         {
                                             prevSum = (prevSum + f) * 10;
                                             for (int g = 0; g <= 9; g++)
                                             {
-                                                if (g != (a & b & c & d & e & f))
+                                                if ((g != a) & (g != b) & (g != c) & (g != d) & (g != e) & (g != f))
                                                 {
                                                     prevSum = (prevSum + g) * 10;
                                                     for (int h = 0; h <= 9; h++)
                                                     {
-                                                        if (b != (a & b & c & d & e & f & g))
+                                                        if ((h != a) & (h != b) & (h != c) & (h != d) & (h != e) & (h != f) & (h != g))
                                                         {
                                                             prevSum = (prevSum + h) * 10;
                                                             for (int i = 0; i <= 9; i++)
                                                             {
-                                                                if (b != (a & b & c & d & e & f & g & h))
+                                                                if ((i != a) & (i != b) & (i != c) & (i != d) & (i != e) & (i != f) & (i != g) & (i != h))
                                                                 {
                                                                     prevSum = (prevSum + i) * 10;
                                                                     for (int j = 0; j <= 9; j++)
                                                                     {
-                                                                        if (j != (a & b & c & d & e & f & g & h & i))
+                                                                        if ((j != a) & (j != b) & (j != c) & (j != d) & (j != e) & (j != f) & (j != g) & (j != h) & (j != i))
                                                                         {
-                                                                            prevSum += a;
+                                                                            prevSum += j;
                                                                             count++;
-                                                                        }
-                                                                        if (count == 1000000)
-                                                                        {
-                                                                            break;
+                                                                            if (count == 1000000)
+                                                                            {
+                                                                                break;
+                                                                            }
+                                                                            prevSum = prevSum ;
                                                                         }
                                                                     }
                                                                 }
