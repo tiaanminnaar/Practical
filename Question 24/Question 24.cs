@@ -1,5 +1,6 @@
 ﻿int count = 0;
-int prevSum = 0;
+long prevSum = 0;
+long sum = 0;
 
 for (int a = 0; a <= 9; a++)
 {
@@ -49,31 +50,39 @@ for (int a = 0; a <= 9; a++)
                                                                         if ((j != a) & (j != b) & (j != c) & (j != d) & (j != e) & (j != f) & (j != g) & (j != h) & (j != i))
                                                                         {
                                                                             prevSum += j;
+                                                                            sum = prevSum;
                                                                             count++;
                                                                             if (count == 1000000)
                                                                             {
+                                                                                WriteLine(sum);
                                                                                 break;
-                                                                            }
-                                                                            prevSum = prevSum ;
+                                                                            }                                                                            
                                                                         }
                                                                     }
-                                                                }
+                                                                    prevSum = (prevSum / 100) * 10;
+                                                                }                                                                
                                                             }
+                                                            prevSum = (prevSum / 100) * 10;
                                                         }
                                                     }
+                                                    prevSum = (prevSum / 100) * 10;
                                                 }
                                             }
+                                            prevSum = (prevSum / 100) * 10;
                                         }
                                     }
+                                    prevSum = (prevSum / 100) * 10;
                                 }
                             }
+                            prevSum = (prevSum / 100) * 10;
                         }
                     }
+                    prevSum = (prevSum / 100) * 10;
                 }
             }
+            prevSum = ( prevSum / 100) * 10;
         }
     }
+    prevSum = 0;
 }
 
-
-WriteLine(prevSum);
